@@ -59,7 +59,7 @@ head(steps_per_day)
 ggplot(steps_per_day, aes(x=steps)) + geom_histogram(fill = 'red', binwidth=1000) + labs(title = 'Histogram - Steps taken per day', x = 'Steps per day', y = 'frequency')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 
 
@@ -113,7 +113,7 @@ head(steps_interval, 10)
 ggplot(data=steps_interval, aes(x=interval, y=steps)) + geom_line(col='red', lwd = 0.2) + labs(title='Time-Series Analysis', x='interval', y='steps per interval')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ## Imputing missing values
 
@@ -166,7 +166,7 @@ ggplot(new_steps_per_day, aes(x = steps)) +
   labs(title = "Histogram - Steps Taken Per Day", x = "Steps Per Day", y = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 ```r
 new_mean_steps_per_day <- mean(steps_per_day$steps)
@@ -225,7 +225,7 @@ ggplot(steps_per_weekday, aes(x = interval, y = steps)) +
   labs(x = "Interval", y = "Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-21-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-21-1.png)<!-- -->
 
 ```r
 Looking at the graph we can say the person has the maximum steps recorded to 300 on weekdays and the next highest touches 130. Whereas on weekends maximum steps touches 150 for more than one time. This shows that the person is more active on weekends than on weekdays.
